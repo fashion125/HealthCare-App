@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="lJD-Ul-39l" customClass="IngredientTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJD-Ul-39l" id="ipg-EM-AIN">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFb-vT-ekr">
+                        <rect key="frame" x="402" y="5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="ed4-Qa-YkB"/>
+                            <constraint firstAttribute="height" constant="25" id="mSY-GG-8YU"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="remove_ingredient.png">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pressRemove:" destination="lJD-Ul-39l" eventType="touchUpInside" id="J0B-0d-uSp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broccoli cooked from fresh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0l-oi-Baa">
+                        <rect key="frame" x="9" y="2" width="384" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="cSS-vt-ni3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLe-rK-FB5">
+                        <rect key="frame" x="9" y="29" width="180" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-KM-Ubg">
+                                <rect key="frame" x="5" y="0.0" width="170" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4Hp-ol-XHS"/>
+                            <constraint firstAttribute="width" constant="180" id="h7m-rc-1QP"/>
+                            <constraint firstAttribute="bottom" secondItem="lbR-KM-Ubg" secondAttribute="bottom" id="iDj-0p-UQ7"/>
+                            <constraint firstItem="lbR-KM-Ubg" firstAttribute="leading" secondItem="qLe-rK-FB5" secondAttribute="leading" constant="5" id="iV6-cs-DoQ"/>
+                            <constraint firstAttribute="trailing" secondItem="lbR-KM-Ubg" secondAttribute="trailing" constant="5" id="wcy-zo-iV5"/>
+                            <constraint firstItem="lbR-KM-Ubg" firstAttribute="top" secondItem="qLe-rK-FB5" secondAttribute="top" id="zvJ-Gi-hEu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qLe-rK-FB5" firstAttribute="top" secondItem="h0l-oi-Baa" secondAttribute="bottom" id="BqK-C8-rUk"/>
+                    <constraint firstItem="qLe-rK-FB5" firstAttribute="leading" secondItem="ipg-EM-AIN" secondAttribute="leading" constant="9" id="EWk-nT-GTJ"/>
+                    <constraint firstItem="h0l-oi-Baa" firstAttribute="leading" secondItem="ipg-EM-AIN" secondAttribute="leading" constant="9" id="RMQ-G3-RjX"/>
+                    <constraint firstAttribute="trailing" secondItem="eFb-vT-ekr" secondAttribute="trailing" constant="9" id="XtG-Gz-OkG"/>
+                    <constraint firstItem="eFb-vT-ekr" firstAttribute="leading" secondItem="h0l-oi-Baa" secondAttribute="trailing" constant="9" id="gBK-6g-GU2"/>
+                    <constraint firstItem="eFb-vT-ekr" firstAttribute="top" secondItem="ipg-EM-AIN" secondAttribute="top" constant="5" id="m1L-YN-9DE"/>
+                    <constraint firstItem="h0l-oi-Baa" firstAttribute="centerY" secondItem="eFb-vT-ekr" secondAttribute="centerY" constant="-2" id="qjZ-C5-u9v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="measureLabel" destination="lbR-KM-Ubg" id="6NK-cV-P7f"/>
+                <outlet property="measureView" destination="qLe-rK-FB5" id="1aa-pt-GRN"/>
+                <outlet property="measureWidth" destination="h7m-rc-1QP" id="YOH-TZ-Ipw"/>
+                <outlet property="nameLabel" destination="h0l-oi-Baa" id="Ic1-lW-JQL"/>
+                <outlet property="removeButton" destination="eFb-vT-ekr" id="v01-n8-g8C"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="-117.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="remove_ingredient.png" width="35" height="36"/>
+    </resources>
+</document>

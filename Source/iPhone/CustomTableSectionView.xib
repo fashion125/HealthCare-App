@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTableSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m25-tc-DaW">
+                    <rect key="frame" x="15" y="0.0" width="570" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="m25-tc-DaW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="E8m-Xn-4vw"/>
+                <constraint firstAttribute="trailing" secondItem="m25-tc-DaW" secondAttribute="trailing" constant="15" id="KwJ-15-HZM"/>
+                <constraint firstAttribute="bottom" secondItem="m25-tc-DaW" secondAttribute="bottom" id="Oij-Yu-SLU"/>
+                <constraint firstItem="m25-tc-DaW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QFP-1E-H6z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="m25-tc-DaW" id="oII-Fg-dhG"/>
+            </connections>
+            <point key="canvasLocation" x="339" y="-69"/>
+        </view>
+    </objects>
+</document>

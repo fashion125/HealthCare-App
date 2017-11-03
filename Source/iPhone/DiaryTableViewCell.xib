@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica</string>
+            <string>Helvetica</string>
+            <string>Helvetica</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="50" id="2" customClass="DiaryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="E0L-tn-AQY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="diary entry description" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                        <rect key="frame" x="48" y="3" width="197" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="F90-8L-F4r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2000.5" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                        <rect key="frame" x="253" y="6" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="b4U-lq-XFs"/>
+                            <constraint firstAttribute="width" constant="60" id="vcU-dD-Qqk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
+                        <color key="textColor" red="0.1185185185" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="amount" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5" customClass="MarginedLabel">
+                        <rect key="frame" x="48" y="26" width="202" height="18"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="87t-Vd-TOe"/>
+                            <constraint firstAttribute="width" constant="202" id="R5B-2T-tLJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="apple-16x16.png" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                        <rect key="frame" x="13" y="11" width="22" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="aDm-Cb-J9Q"/>
+                            <constraint firstAttribute="height" constant="27" id="bCJ-Xz-OUp"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="units" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                        <rect key="frame" x="112" y="26" width="138" height="18"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" kcal " lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnc-Af-xVR" customClass="MarginedLabel">
+                        <rect key="frame" x="256" y="26" width="54" height="18"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="VIG-uq-88z"/>
+                            <constraint firstAttribute="height" constant="18" id="yKZ-uL-vOA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5" firstAttribute="leading" secondItem="12" secondAttribute="trailing" constant="13" id="3EP-wf-Hlc"/>
+                    <constraint firstItem="rnc-Af-xVR" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="3Nw-fZ-1xr"/>
+                    <constraint firstItem="4" firstAttribute="top" secondItem="E0L-tn-AQY" secondAttribute="top" constant="6" id="4Kp-dy-uvi"/>
+                    <constraint firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="11" id="CFn-dP-pBr"/>
+                    <constraint firstItem="4" firstAttribute="leading" secondItem="3" secondAttribute="trailing" constant="8" id="GFL-H7-D7Y"/>
+                    <constraint firstItem="3" firstAttribute="leading" secondItem="12" secondAttribute="trailing" constant="13" id="YFj-s4-yDg"/>
+                    <constraint firstAttribute="centerY" secondItem="12" secondAttribute="centerY" id="gst-Zq-9Ja"/>
+                    <constraint firstItem="4" firstAttribute="centerX" secondItem="rnc-Af-xVR" secondAttribute="centerX" id="qcA-MT-85n"/>
+                    <constraint firstItem="12" firstAttribute="leading" secondItem="E0L-tn-AQY" secondAttribute="leading" constant="13" id="tXM-Mr-lxh"/>
+                    <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="7" id="uD4-Cr-CvI"/>
+                    <constraint firstItem="5" firstAttribute="top" secondItem="3" secondAttribute="bottom" id="wgR-Oy-yCs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="amount" destination="5" id="8"/>
+                <outlet property="amountWidth" destination="R5B-2T-tLJ" id="0mh-6E-wpf"/>
+                <outlet property="calories" destination="4" id="11"/>
+                <outlet property="descVerticalAlign" destination="CFn-dP-pBr" id="NaO-qH-Mlt"/>
+                <outlet property="icon" destination="12" id="13"/>
+                <outlet property="largeUnit" destination="rnc-Af-xVR" id="4Ic-ET-uLK"/>
+                <outlet property="largeUnitWidth" destination="VIG-uq-88z" id="nbd-LN-l0z"/>
+                <outlet property="title" destination="3" id="9"/>
+                <outlet property="units" destination="6" id="10"/>
+            </connections>
+            <point key="canvasLocation" x="231" y="259.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="apple-16x16.png" width="16" height="16"/>
+    </resources>
+</document>

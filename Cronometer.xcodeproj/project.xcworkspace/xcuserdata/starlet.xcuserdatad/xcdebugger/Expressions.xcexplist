@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "+[LoginViewController showPostLoginView:ssid:]:LoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[WebQuery singleton] isLoggedIn]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AddServingViewController setFood:]:AddServingViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AddServingViewController viewDidLoad]:AddServingViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.serving">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AddRecipeViewController loadData]:AddRecipeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tempCategories">
+            </PersistentString>
+            <PersistentString
+               value = "self.nutrients ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

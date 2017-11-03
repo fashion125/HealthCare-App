@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="6OA-b7-S4r" customClass="TargetSummaryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6OA-b7-S4r" id="Akm-Wb-VCR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrs-jP-ZEL">
+                        <rect key="frame" x="10" y="6" width="300" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_grey_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-rT-8jp">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_red_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jTf-BA-Kao">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_green_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-T9-5yV">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_yellow_bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cq0-MX-oTO">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="32"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy 189.0 / 1463 kcal (13%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVW-Ay-6H9">
+                                <rect key="frame" x="0.0" y="5" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dcV-k9-4ys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TY4-rT-8jp" secondAttribute="trailing" id="3ci-P8-s9D"/>
+                            <constraint firstAttribute="trailing" secondItem="fwz-T9-5yV" secondAttribute="trailing" id="6jb-gy-sE7"/>
+                            <constraint firstAttribute="height" constant="32" id="Bnu-97-3Fg"/>
+                            <constraint firstAttribute="trailing" secondItem="vVW-Ay-6H9" secondAttribute="trailing" id="CMG-lk-VPv"/>
+                            <constraint firstItem="fwz-T9-5yV" firstAttribute="leading" secondItem="Lrs-jP-ZEL" secondAttribute="leading" id="Hqa-5X-v2I"/>
+                            <constraint firstAttribute="centerY" secondItem="vVW-Ay-6H9" secondAttribute="centerY" id="ITI-3h-vtH"/>
+                            <constraint firstItem="TY4-rT-8jp" firstAttribute="top" secondItem="Lrs-jP-ZEL" secondAttribute="top" id="MbJ-tu-1t7"/>
+                            <constraint firstItem="jTf-BA-Kao" firstAttribute="top" secondItem="Lrs-jP-ZEL" secondAttribute="top" id="PJk-L0-mBd"/>
+                            <constraint firstItem="Cq0-MX-oTO" firstAttribute="leading" secondItem="Lrs-jP-ZEL" secondAttribute="leading" id="RQD-fL-7pp"/>
+                            <constraint firstAttribute="bottom" secondItem="fwz-T9-5yV" secondAttribute="bottom" id="SLW-DA-zyB"/>
+                            <constraint firstAttribute="bottom" secondItem="TY4-rT-8jp" secondAttribute="bottom" id="VD7-Ig-fVL"/>
+                            <constraint firstAttribute="trailing" secondItem="Cq0-MX-oTO" secondAttribute="trailing" constant="50" id="avm-PC-mOw"/>
+                            <constraint firstAttribute="bottom" secondItem="Cq0-MX-oTO" secondAttribute="bottom" id="dDV-k8-gAp"/>
+                            <constraint firstAttribute="trailing" secondItem="jTf-BA-Kao" secondAttribute="trailing" id="jpa-s6-WfR"/>
+                            <constraint firstItem="Cq0-MX-oTO" firstAttribute="top" secondItem="Lrs-jP-ZEL" secondAttribute="top" id="uae-Oi-TRW"/>
+                            <constraint firstAttribute="bottom" secondItem="jTf-BA-Kao" secondAttribute="bottom" id="w9U-uS-fDE"/>
+                            <constraint firstItem="fwz-T9-5yV" firstAttribute="top" secondItem="Lrs-jP-ZEL" secondAttribute="top" id="woI-CJ-NeD"/>
+                            <constraint firstItem="vVW-Ay-6H9" firstAttribute="leading" secondItem="Lrs-jP-ZEL" secondAttribute="leading" id="wqI-kt-j9p"/>
+                            <constraint firstItem="jTf-BA-Kao" firstAttribute="leading" secondItem="Lrs-jP-ZEL" secondAttribute="leading" id="xN2-5a-zY2"/>
+                            <constraint firstItem="TY4-rT-8jp" firstAttribute="leading" secondItem="Lrs-jP-ZEL" secondAttribute="leading" id="zbZ-W2-7TA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lrs-jP-ZEL" firstAttribute="leading" secondItem="Akm-Wb-VCR" secondAttribute="leading" constant="10" id="EEa-as-FXA"/>
+                    <constraint firstAttribute="centerY" secondItem="Lrs-jP-ZEL" secondAttribute="centerY" id="JqO-MT-Wts"/>
+                    <constraint firstAttribute="trailing" secondItem="Lrs-jP-ZEL" secondAttribute="trailing" constant="10" id="U9s-5O-5eW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="greenBar" destination="fwz-T9-5yV" id="Hd6-24-3vI"/>
+                <outlet property="redBar" destination="jTf-BA-Kao" id="1CX-O9-Uhs"/>
+                <outlet property="targetBar1" destination="Lrs-jP-ZEL" id="Bed-ZW-OCd"/>
+                <outlet property="targetLabel" destination="vVW-Ay-6H9" id="Vu5-RQ-U5e"/>
+                <outlet property="yellowBar" destination="Cq0-MX-oTO" id="xm9-21-tTT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_green_bar.png" width="16" height="62"/>
+        <image name="ic_grey_bar.png" width="16" height="62"/>
+        <image name="ic_red_bar.png" width="16" height="62"/>
+        <image name="ic_yellow_bar.png" width="16" height="62"/>
+    </resources>
+</document>

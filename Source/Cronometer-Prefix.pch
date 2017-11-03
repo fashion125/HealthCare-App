@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the 'Cronometer' target in the 'Cronometer' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+   #import <UIKit/UIKit.h>
+   #import <Foundation/Foundation.h>
+
+    #import "WebQuery.h"
+    #import "Toolbox.h"
+
+    #import "BaseViewController.h"
+
+#endif
+
+
+#define kCRON_POUNDS_TO_KG 0.45359237038
+#define kCRON_INCHES_TO_CM 2.54
